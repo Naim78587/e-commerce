@@ -145,7 +145,44 @@ nav{
 .slider__nav a:hover{
     opacity: 1;
 }
+.slider{
+    background-color: #d8e3e8;
+}
 /*Slider banner  ends here*/
+
+/* footer starts here */
+.footer{
+    background-color:var(--secondary-color);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 6vh;
+    padding: 1rem 1rem;
+    gap: 1rem;
+}
+.copyright-text{
+    font-size: 1.5rem;
+}
+.footer_link{
+    color: white;
+    transition: var(--transition);
+}
+.footer_link:hover{
+    transform: var(--transition);
+    color: var(--primary-color);
+}
+
+.footer_icon{
+    font-size: 2rem;
+}
+.footer__nav{
+    display: flex;
+    gap: 1.5rem;
+    background-color: var(--secondary-color);
+}
+/* footer ends here */
+
 /* Responsiveness code starts here */
 @media (max-width: 992px) {
     nav {
@@ -211,6 +248,9 @@ nav{
     .profile-icon {
         height: 1.5rem;
         width: 1.5rem;
+    }
+    .footer {
+        flex-direction: column;
     }
 }
 /* Responsiveness code ends here */
