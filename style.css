@@ -148,6 +148,33 @@ nav{
 .slider{
     background-color: #d8e3e8;
 }
+.slider__outside{
+    padding: 2rem;
+}
+.slider__outside marquee{
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.service{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+}
+.service__art{
+    text-align: center;
+    color: white;
+    background-color: var(--primary-color);
+    width: 17rem;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    opacity: 0.8;
+}
+.service__icon{
+    font-size: 3rem;
+    margin-bottom: 0.7rem;
+}
 /*Slider banner  ends here*/
 
 /* footer starts here */
@@ -192,6 +219,10 @@ nav{
     .nav-bar2, .nav-bar3 {
         gap: 1rem;
     }
+    .service{
+        flex-direction: column;
+        gap: 2rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -235,6 +266,10 @@ nav{
         width: 100%;
         text-align: left;
     }
+    .service{
+        flex-direction: column;
+        gap: 2rem;
+    }
 }
 
 @media (max-width: 600px) {
@@ -251,6 +286,10 @@ nav{
     }
     .footer {
         flex-direction: column;
+    }
+    .service{
+        flex-direction: column;
+        gap: 2rem;
     }
 }
 /* Responsiveness code ends here */
