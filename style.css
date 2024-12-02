@@ -22,6 +22,48 @@ img{
     width: 100%;
     height: auto;
 }
+body{
+    background-color: #d8e3e8;
+}
+.btn{
+    border: none;
+    padding:0.6rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: var(--secondary-color);
+}
+.btn:hover{
+    background-color: var(--secondary-color);
+    color: white;
+}
+.section-title{
+    font-size: 2rem;
+}
+.card{
+    box-shadow: var(--box-shadow);
+    border-radius: 0.6rem;
+    padding: 0.6rem;
+    transition: var(--transition);
+}
+.card:hover{
+    box-shadow: 0.1rem 0.2rem 0.8rem rgba(205, 202, 202, 1);
+}
+.dot{
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    display: inline-block;
+}
+.black{
+    background-color: black;
+}
+.ash{
+    background-color: #4e4e4c;
+}
+.blue{
+    background-color: #93aec3;
+}
 /*reset codes and common codes end*/
 
 /*Navbar starts here*/
@@ -175,8 +217,106 @@ nav{
     font-size: 3rem;
     margin-bottom: 0.7rem;
 }
+.service__icon:hover{
+    color: var(--secondary-color);
+}
 /*Slider banner  ends here*/
+/*main section starts here*/
+.mainbody{
+    display: flex;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+.sidebar{
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    opacity: 0.8;
+    background-color: white;
+}
+.category-section{
+    margin-top: 8rem;
+}
+.maincontent{
+    flex: 5;
+    background-color: white;
+}
+.action{
+    display: flex;
+    gap: 50%;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+.sort-action select{
+    padding: 0.5rem;
+}
+.sort-action option{
+    background-color: var(--secondary-color);
+    color: white;
+}
+.sort-action option:hover{
+    background-color: var(--primary-color);
+    color: white;
+}
+.search-action input{
+    padding: 0.5rem;
+    width: 15rem;
+}
+.search-action button{
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.5rem;
+    margin-left: -0.3rem;
+    
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    gap:2rem;
+    padding: 2rem 2rem;
+    position: relative;
+}
+.product img{
+    width: 100%;
+    height: auto;
+}
+.product__body{
+    padding: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+.product__body a{
+    color: var(--secondary-color);
+}
+.product__btn{
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.6rem;
+}
+.product.card {
+    position: relative;
+    overflow: hidden; 
+}
+.badge {
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 1.2rem;
+    position: absolute; 
+    top: 1.15rem;
+    left: 0.75rem;
+    z-index: 10;
+    padding: 4px 8px;
+    text-align: center;
+    border-radius: 5px;
+}
 
+.hr-design{
+    margin: 0.5rem 0;
+}
+/*main section starts here*/
 /* footer starts here */
 .footer{
     background-color:var(--secondary-color);
@@ -222,6 +362,26 @@ nav{
     .service{
         flex-direction: column;
         gap: 2rem;
+    }
+    .mainbody {
+        flex-direction: column;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .sidebar {
+        flex: 1;
+        margin-bottom: 2rem;
+    }
+    .maincontent {
+        flex: 1;
+    }
+    .products {
+        grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns */
+        gap: 1.5rem; /* Reduce gap between items */
+        padding: 1.5rem; /* Adjust padding */
+    }
+    .product {
+        padding: 0.5rem; /* Reduce product padding */
     }
 }
 
@@ -270,6 +430,33 @@ nav{
         flex-direction: column;
         gap: 2rem;
     }
+    .mainbody {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .sidebar {
+        padding: 1rem;
+    }
+    .maincontent {
+        padding: 1rem;
+    }
+    .action {
+        flex-direction: column;
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+    .sort-action, .search-action {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .products {
+        grid-template-columns: repeat(1, 1fr); /* Single column layout */
+        gap: 1rem; /* Further reduce gap */
+        padding: 1rem; /* Adjust padding */
+    }
+    .product {
+        padding: 0.5rem; /* Keep compact padding */
+    }
 }
 
 @media (max-width: 600px) {
@@ -290,6 +477,38 @@ nav{
     .service{
         flex-direction: column;
         gap: 2rem;
+    }
+    .mainbody {
+        margin: 0.5rem;
+    }
+    .sidebar {
+        padding: 0.5rem;
+    }
+    .maincontent {
+        padding: 0.5rem;
+    }
+    .action {
+        flex-direction: column;
+        gap: 1rem;
+        margin: 0.5rem 0;
+    }
+    .sort-action select {
+        width: 60%;
+    }
+    .search-action input {
+        width: calc(60% - 3rem);
+        margin-left: 3.85rem;
+    }
+    .search-action button {
+        width: 2.5rem;
+    }
+    .products {
+        grid-template-columns: repeat(1, 1fr); /* Single column for mobile */
+        gap: 0.5rem; /* Minimal gap */
+        padding: 0.5rem; /* Minimal padding */
+    }
+    .product {
+        padding: 0.3rem; /* Tighten product padding */
     }
 }
 /* Responsiveness code ends here */
