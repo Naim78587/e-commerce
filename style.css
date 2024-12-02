@@ -316,6 +316,22 @@ nav{
 .hr-design{
     margin: 0.5rem 0;
 }
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.pagination__btn{
+    border-width: 1px 1px 1px 0;
+    border-style: solid;
+    border-color: var(--primary-color);
+}
+.pagination__btn:first-child{
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-color: var(--primary-color);
+}
 /*main section starts here*/
 /* footer starts here */
 .footer{
