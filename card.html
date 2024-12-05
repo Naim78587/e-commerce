@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- font awesome cdn  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Cardpage</title>
+    <title>Cartpage</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -53,6 +53,88 @@
             </div>
      </nav>
     <!-- nav bar ends here -->
+     <!-- cart section starts here -->
+    <main class="cart__main">
+        <div class="cart">
+            <div class="cart__items">
+                <div class="cart__items__heading card">
+                    <h2>Shopping Cart (2 items)</h2>
+                    <div class="cart__items__action">
+                        <label for="select">
+                            <input type="checkbox" name="select" id="select">
+                            Select all items
+                        </label>
+                        <button class="btn"><i class="fas fa-trash-alt"></i> </button>
+                        <a href="index.html"><button class="btn">Shop more</button></a>
+                    </div>
+                </div>
+                <div class="cart__item card">
+                    <input type="checkbox">
+                    <img src="phone.webp" alt="loading image" class="cart__item-img">
+                    <div class="cart__item-desc">
+                        <h3 class="product__name">Samsung Galaxy S24 Ultra (12/256GB)</h3>
+                        <h4 class="product__price">Price: 243,999৳</h4>
+                        <p class="cart__item-shipping">Free shipping</p>
+                    </div>
+                    <div class="cart__action">
+                        <button class="btn"><i class="fas fa-trash-alt"></i> </button>
+                        <div class="cart__quantity">
+                            <button class="btn"><i class="fas fa-add"></i> </button>
+                            <span>1</span>
+                            <button class="btn"><i class="fas fa-minus"></i> </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart__item card">
+                    <input type="checkbox">
+                    <img src="headphone.webp" alt="loading image" class="cart__item-img">
+                    <div class="cart__item-desc">
+                        <h3 class="product__name">EKSA E900 Pro Gaming Headset</h3>
+                        <h4 class="product__price">Price: 3,200৳</h4>
+                        <p class="cart__item-shipping">Shipping cost: 120৳</p>
+                    </div>
+                    <div class="cart__action">
+                        <button class="btn"><i class="fas fa-trash-alt"></i> </button>
+                        <div class="cart__quantity">
+                            <button class="btn"><i class="fas fa-add"></i> </button>
+                            <span>1</span>
+                            <button class="btn"><i class="fas fa-minus"></i> </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart__payments">
+                <div class="cart__payments-summary card">
+                    <h2 class="product__name">Payment Summary</h2>
+                    <div class="payment_sum">
+                        <div>
+                            <p>Subtotal: </p>
+                            <p>Shipping Cost: </p>
+                            <p>Discount: </p>
+                            <p>Total Cost: </p>     
+                        </div>
+                        <div>
+                            <p>0.00৳</p>
+                            <p>0.00৳</p>
+                            <p>0.00৳</p>
+                            <p>0.00৳</p>
+                        </div>
+                    </div>
+                    <button class="btn final">Place order</button>
+                </div>
+                <div class="cart_payments-options card">
+                    <h2 class="product__name">Payment Methods</h2>
+                    <div class="pay__icon">
+                        <i class="fa-brands fa-cc-visa fa-3x visacard"></i>
+                        <img src="bkash.png" alt="loading image" class="payment-img">
+                        <img src="rocket.png" alt="loading image" class="payment-img">
+                        <img src="nogod.png" alt="loading image" class="payment-img">
+                    </div>
+                </div>
+            </div>
+          </div>
+    </main>
+     <!-- cart section ends here -->
      <!-- Footer Starts here -->
      <footer class="footer">
         <p class="copyright-text">
