@@ -461,6 +461,45 @@ nav{
     color: var(--primary-color);
 }
 /* cart section endss here */
+/*profile section starts*/
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    height: 72vh;
+    
+}
+.profile__card{
+    background-color: white;
+    width: 20rem;
+    height: 20rem;
+}
+.profile h2{
+    text-align: center;
+    padding: 1rem;
+}
+.profile__email{
+    text-align: center;
+}
+.profile__about{
+    text-align: center;
+}
+.profile-img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: 0.2rem solid var(--primary-color);
+    margin-left: 28%;
+}
+.profile__button{
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+}
+/*profile section ends*/
 /* Responsiveness code starts here */
 @media (max-width: 992px) {
     nav {
